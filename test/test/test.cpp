@@ -5,6 +5,7 @@ using namespace std;
 int main() {
 	string word;
 	getline(cin, word);
-	for (auto c : word)
-		cout << (char)toupper(c);
+	for (auto &c : word)
+		c = toupper(c);
+	cout << word;
 }
