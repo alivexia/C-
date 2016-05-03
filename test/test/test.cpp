@@ -1,11 +1,14 @@
 #include<iostream>
-#include<string>
-#include<cctype>
+#include<vector>
 using namespace std;
 int main() {
-	string word;
-	getline(cin, word);
-	for (auto &c : word)
-		c = toupper(c);
-	cout << word;
+	vector<int> grades(11, 0);
+	int scores;
+	while(cin >> scores)
+		if (scores <= 100)
+		{
+			++grades[scores / 10];
+		}						  
+	for (auto i : grades)
+		cout << i <<",";
 }
