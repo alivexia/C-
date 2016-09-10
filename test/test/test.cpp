@@ -7,5 +7,5 @@ int main() {
 		auto it = s.begin();
 		*it = tolower(*it);
 	}
-	cout << s;
+	cout << s;//
 }
